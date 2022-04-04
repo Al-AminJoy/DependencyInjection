@@ -14,7 +14,9 @@ class MainActivity : AppCompatActivity() {
 
       //  DaggerSmartPhoneComponent.create().inject(this);
 
-        DaggerSmartPhoneComponent.builder().memoryCardModule(MemoryCardModule(200)).build().inject(this);
+      //  DaggerSmartPhoneComponent.builder().memoryCardModule(MemoryCardModule(200)).build().inject(this);
+
+        (application as DIApplication).smartPhoneComponent.inject(this);
 
         smartPhone.makeACallWithRecording()
 
