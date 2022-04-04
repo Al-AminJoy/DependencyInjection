@@ -1,7 +1,6 @@
 package com.alamin.dependencyinjection
 
 import android.util.Log
-import javax.inject.Inject
 
 class MemoryCard{
     init {
